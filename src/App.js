@@ -1,9 +1,11 @@
+import React from 'react';
 import './App.scss';
+import RoutesPages from './routes';
 
 function App() {
   return (
     <div>
-      <h1>Olá</h1>
+      <RoutesPages />
     </div>
   );
 }
