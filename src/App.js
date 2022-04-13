@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.scss';
+import MyProviderContext from './context/MyProviderContext';
 import RoutesPages from './routes';
 
 function App() {
   return (
     <div>
-      <RoutesPages />
+      <MyProviderContext>
+        <RoutesPages />
+      </MyProviderContext>
     </div>
   );
 }

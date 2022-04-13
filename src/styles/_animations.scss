@@ -1,0 +1,51 @@
+@import './variables';
+
+.logo-container {
+  img {
+    animation: logo-spin infinite 20s linear;
+
+    &:hover {
+      animation: logo-spin infinite 2s linear;
+    }
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-title {
+  animation: Slide_up 1.4s ease;
+
+  h2 {
+    animation: Change-opacity 5s ease-in forwards infinite;;
+  }
+}
+
+@keyframes Change-opacity {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.photo-container {
+  animation: Slide_up 2s ease;
+}
+
+@keyframes Slide_up {
+  0% {
+      transform: translateY(500px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
