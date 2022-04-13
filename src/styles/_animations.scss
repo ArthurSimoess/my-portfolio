@@ -38,7 +38,15 @@
 }
 
 .photo-container {
-  animation: Slide_up 2s ease;
+  animation: Slide_up 1.5s ease;
+}
+
+.card-container {
+  animation: Slide_up 1.5s ease;
+}
+
+.progress-container {
+  animation: Slide_up 1.5s ease;
 }
 
 @keyframes Slide_up {

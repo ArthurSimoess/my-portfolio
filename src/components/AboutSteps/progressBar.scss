@@ -1,0 +1,64 @@
+@import '../../styles/main';
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-progress {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+
+  @include respond (notebook) {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+
+.full-progress {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $link;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+
+  @include respond (notebook) {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.empty-border {
+  height: 0.1rem;
+  width: 3rem;
+  border: 1px solid white;
+
+  @include respond (phone) {
+    width: 1rem;
+  }
+}
+
+.full-border {
+  height: 0.1rem;
+  width: 3rem;
+  border: 1px solid $link;
+
+  @include respond (phone) {
+    width: 1rem;
+  }
+}
+
+.walking {
+  transform: scaleX(-1);
+}

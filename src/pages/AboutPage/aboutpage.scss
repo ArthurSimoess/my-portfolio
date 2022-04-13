@@ -1,0 +1,84 @@
+@import '../../styles/main';
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+  gap: 2rem;
+
+  @include respond (phone) {
+    height: 100%;
+  }
+}
+
+.header {
+  @include respond (phone) {
+    display: flex;
+    align-self: flex-start;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond (phone) {
+    flex-direction: column;
+  }
+
+  input {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    @include respond (phone) {
+      width: 3rem;
+      height: 3rem;
+    }
+  
+  }
+}
+
+.about-card {
+  background-color: #242629;
+  height: 35rem;
+  width: 50rem;
+  border: 1px solid $link;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 20px 0 20px;
+
+  @include respond (notebook) {
+    height: 20rem;
+  }
+
+  @include respond (tab-port) {
+    width: 40rem;
+  }
+
+  @include respond (phone) {
+    height: 35rem;
+    width: 23rem;
+    overflow: auto;
+  }
+
+  .title {
+    color: $headline;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+    color: $paragraph;
+    text-align: justify;
+  }
+}
