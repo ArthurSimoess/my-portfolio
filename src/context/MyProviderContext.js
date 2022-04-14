@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import MyContext from './MyContext';
 
 function MyProviderContext({ children }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark-mode');
 
   const contextValue = {
     theme,

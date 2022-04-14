@@ -30,7 +30,7 @@ function ProjectPage() {
   }
 
   return (
-    <div className="about-container">
+    <div className="project-page">
       <div className="header">
         <Header />
       </div>
@@ -40,7 +40,7 @@ function ProjectPage() {
             projects.map((project) => (
               <div className="card-project" key={project.id}>
                 <h1>{project.title}</h1>
-                <img src={project.image} alt="Recipe app login page" width="100%" height="60%" />
+                <img src={project.image} alt="Recipe app login page" width="100%" height="200px" />
                 {
                   project.title !== 'Bamin'
                     ? (
@@ -60,6 +60,11 @@ function ProjectPage() {
                       </div>
                     )
                 }
+                <div className="stacks">
+                  {project.stacks.map((stack) => (
+                    <img src={stack} alt="" width="30px" />
+                  ))}
+                </div>
               </div>
             ))
           }
@@ -79,7 +84,7 @@ function ProjectPage() {
             type="image"
             id="right"
             src={rightArrow}
-            disabled={num.to === 4}
+            disabled={num.to === 3}
             alt="right arrow"
             onClick={changeNum}
           />
