@@ -97,13 +97,24 @@
     width: 25rem;
     height: 30rem;
     background-size: cover;
+    box-shadow: 0 0 20px $link;
+    border-radius: 40px;
 
     @include respond (phone) {
       margin-left: 25px;
+      box-shadow: 0 0;
+      border-radius: 0;
     }
     
     @include respond (tab-port-small) {
       font-size: 1.5rem;
+      box-shadow: 0 0;
+      border-radius: 0;
+    }
+
+    @include respond (notebook) {
+      width: 20rem;
+      height: 25rem;
     }
   }
   
@@ -113,13 +124,21 @@
     justify-content: space-between;
     width: 22rem;
 
+    @include respond (phone) {
+      width: 24rem;
+    }
+
+    @include respond (notebook) {
+      width: 19rem;
+    }
+
     .logo-react {
-      width: 8rem;
-      margin-top: 9rem;
+      width: 7rem;
+      margin-top: 8rem;
     }
     .logo-node {
-      width: 5rem;
-      margin-top: 9rem;
+      width: 4rem;
+      margin-top: 8.7rem;
     }
   }
 }

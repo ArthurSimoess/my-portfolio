@@ -2,7 +2,7 @@ import React from 'react';
 import './header.scss';
 import { useNavigate } from 'react-router-dom';
 import MenuBar from './MenuBar';
-import home from '../../assets/images/home.png';
+import home from '../../assets/images/home.svg';
 
 function Header() {
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ function Header() {
           name="home"
           onClick={handleClick}
         >
-          <img src={home} alt="home icon" />
+          <img src={home} alt="home icon" width="40px" />
         </button>
         <button
           className="nav-button"

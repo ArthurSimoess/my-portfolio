@@ -19,9 +19,11 @@
     margin-bottom: 15px;
 
     img {
+      // https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
+      // https://codepen.io/sosuke/pen/Pjoqqp --> Conver fill color.
       &:hover {
-        width: 3rem;
-      }
+        filter: invert(48%) sepia(53%) saturate(7495%) hue-rotate(239deg) brightness(99%) contrast(90%);
+      };
     }
   }
 
