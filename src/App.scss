@@ -1,7 +1,11 @@
 @import './styles/main';
 
-body {
+.dark-mode {
   background-color: $bg-color;
+}
+
+.light-mode {
+  background-color: #FAFAFB;
 }
 
 * {

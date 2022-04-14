@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.scss';
-import MyProviderContext from './context/MyProviderContext';
+import MyContext from './context/MyContext';
 import RoutesPages from './routes';
 
 function App() {
+  const { theme } = useContext(MyContext);
+
   return (
-    <div>
-      <MyProviderContext>
-        <RoutesPages />
-      </MyProviderContext>
+    <div id={theme} className={theme}>
+      <RoutesPages />
     </div>
   );
 }

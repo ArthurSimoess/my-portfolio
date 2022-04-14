@@ -1,5 +1,14 @@
 @import '../../styles/main';
 
+.project-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  gap: 2rem;
+}
+
 .project-container {
   display: flex;
   justify-content: center;
@@ -39,7 +48,7 @@
 
 .card-project {
   width: 20rem;
-  height: 23rem;
+  height: 24rem;
   border: 1px solid $link;
   padding: 0 4px 0 4px;
   border-radius: 10px;
@@ -96,4 +105,11 @@
       color: $link;
     }
   }
+}
+
+.stacks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
