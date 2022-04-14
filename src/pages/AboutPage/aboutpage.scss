@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 
   @include respond (phone) {
     flex-direction: column;
@@ -38,6 +39,11 @@
       cursor: not-allowed;
     }
 
+    &:hover {
+      border-radius: 100px;
+      box-shadow: 0 0 20px #ccc;
+    }
+
     @include respond (phone) {
       width: 3rem;
       height: 3rem;
@@ -49,19 +55,20 @@
 .about-card {
   background-color: #242629;
   height: 35rem;
-  width: 50rem;
+  width: 45rem;
   border: 1px solid $link;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0 20px 0 20px;
+  border-radius: 20px;
 
   @include respond (notebook) {
     height: 20rem;
   }
 
   @include respond (tab-port) {
-    width: 40rem;
+    width: 31rem;
   }
 
   @include respond (phone) {

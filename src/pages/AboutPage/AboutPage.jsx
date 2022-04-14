@@ -38,7 +38,6 @@ function AboutPage() {
           onClick={stepProgress}
         />
         <main className="about-card">
-          <div className="card-progress">progress bar</div>
           <div className="title">{historyList[step].title}</div>
           <div className="paragraph">{historyList[step].paragraph}</div>
         </main>
