@@ -1,5 +1,6 @@
 import recipeImg from '../assets/images/recipesimg.png';
 import trunfoImg from '../assets/images/trunfo.png';
+import portfolio from '../assets/images/portfolio.png';
 
 const projectsList = [
   {
@@ -33,9 +34,9 @@ const projectsList = [
     id: 4,
     tipo: 'Pessoal',
     linkSite: 'https://main.d1c34ifddgonvj.amplifyapp.com/',
-    linkCode: 'https://github.com/ArthurSimoess/recipe-app',
-    gif: 'a',
-    title: 'Em breve',
+    linkCode: 'https://github.com/ArthurSimoess/my-portfolio',
+    image: portfolio,
+    title: 'Portfolio web',
     text: 'Aplicação desenvolvida com ReactJs como trabalho de conclusão do módulo de front-end na Trybe. O trabalho foi realizado em um grupo de 4 pessoas, utilizando a técnica de pair programming para aproveitarmos a oportunidade de aprender e trocar e experiências. Foi um projeto riquíssimo e muito importante para valorizar ainda mais o trabalho em equipe. Para mais detalhes sobre o projeto acesso o código no github.',
   },
   {
