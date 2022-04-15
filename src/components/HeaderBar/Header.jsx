@@ -1,11 +1,14 @@
 import React from 'react';
 import './header.scss';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import MenuBar from './MenuBar';
 import home from '../../assets/images/home.svg';
 
 function Header() {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  console.log(pathname);
 
   function handleClick({ target }) {
     const { name } = target;
@@ -39,10 +42,10 @@ function Header() {
           name="home"
           onClick={handleClick}
         >
-          <img src={home} alt="home icon" width="40px" />
+          <img src={home} alt="home icon" width="40px" className={pathname === '/' && 'img-active'} />
         </button>
         <button
-          className="nav-button"
+          className={pathname === '/about' ? 'nav-button btn-active' : 'nav-button'}
           type="button"
           name="about"
           onClick={handleClick}
@@ -50,7 +53,7 @@ function Header() {
           Sobre
         </button>
         <button
-          className="nav-button"
+          className={pathname === '/projects' ? 'nav-button btn-active' : 'nav-button'}
           type="button"
           name="projects"
           onClick={handleClick}
@@ -58,7 +61,7 @@ function Header() {
           Projetos
         </button>
         <button
-          className="nav-button"
+          className={pathname === '/skills' ? 'nav-button btn-active' : 'nav-button'}
           type="button"
           name="skills"
           onClick={handleClick}
@@ -66,7 +69,7 @@ function Header() {
           Habilidades
         </button>
         <button
-          className="nav-button"
+          className={pathname === '/contact' ? 'nav-button btn-active' : 'nav-button'}
           type="button"
           name="contact"
           onClick={handleClick}
