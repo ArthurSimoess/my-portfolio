@@ -6,6 +6,7 @@ import tailwind from '../assets/images/tailwindcss.svg';
 import javascript from '../assets/images/javascriptlogo.svg';
 import sass from '../assets/images/sass.svg';
 import empty from '../assets/images/empty.svg';
+import bamin from '../assets/images/bamin.png';
 
 const projectsList = [
   {
@@ -31,9 +32,9 @@ const projectsList = [
     tipo: 'Profissional',
     linkSite: '',
     linkCode: '',
-    gif: 'a',
+    image: bamin,
     title: 'Bamin',
-    stacks: [],
+    stacks: [react, tailwind, javascript],
     text: 'Primeiro projeto profissional que estou realizando. O site tem como função auxiliar a empresa Bamin no controle interno do escoamente e recebimento de minério, controlando o fluxo de viagens(Rodoviárias e Ferroviárias) e agilizando os processos de registro de minério. Sou o responsável pelo desenvolvimento front-end do site e meu amigo Eduardo Temponi, que me convidou para ajudá-lo está responsável pelo back-end.',
   },
   {

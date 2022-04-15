@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/HeaderBar/Header';
@@ -5,12 +6,18 @@ import projectsList from '../../data/projectsData';
 import './projects.scss';
 import leftArrow from '../../assets/images/left-arrow.png';
 import rightArrow from '../../assets/images/right-arrow.png';
+import Modal from '../../components/Modal/Modal';
 
 function ProjectPage() {
   const [num, setNum] = useState({
     to: 0,
     from: 3,
   });
+  const [open, setOpen] = useState(false);
+
+  function showModal() {
+    setOpen(!open);
+  }
 
   const projects = projectsList.slice(num.to, num.from);
 
@@ -31,6 +38,9 @@ function ProjectPage() {
 
   return (
     <div className="project-page">
+      {
+        open && <Modal showModal={showModal} />
+      }
       <div className="header">
         <Header />
       </div>
@@ -54,7 +64,10 @@ function ProjectPage() {
                     : (
                       <div className="bamin-options">
                         <div>Profissional</div>
-                        <button type="button">
+                        <button
+                          type="button"
+                          onClick={showModal}
+                        >
                           Saiba mais
                         </button>
                       </div>
