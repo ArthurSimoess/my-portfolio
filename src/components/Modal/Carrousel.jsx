@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import bamin from '../../assets/images/bamin.png';
+import './modal.scss';
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -13,21 +14,21 @@ function ControlledCarousel() {
     <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-bottom"
           src={bamin}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-bottom"
           src={bamin}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-bottom"
           src={bamin}
           alt="Third slide"
         />

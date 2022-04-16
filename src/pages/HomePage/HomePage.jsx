@@ -17,11 +17,6 @@ function HomePage() {
             <button
               type="button"
             >
-              Currículo
-            </button>
-            <button
-              type="button"
-            >
               Linkedin
             </button>
             <button

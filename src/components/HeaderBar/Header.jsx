@@ -8,8 +8,6 @@ function Header() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  console.log(pathname);
-
   function handleClick({ target }) {
     const { name } = target;
     switch (name) {
