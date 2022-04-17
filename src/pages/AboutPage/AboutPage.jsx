@@ -37,7 +37,7 @@ function AboutPage() {
           alt="left arrow"
           onClick={stepProgress}
         />
-        <main className="about-card">
+        <main className="about-card" id="style-7">
           <div className="title">{historyList[step].title}</div>
           <div className="paragraph">{historyList[step].paragraph}</div>
         </main>

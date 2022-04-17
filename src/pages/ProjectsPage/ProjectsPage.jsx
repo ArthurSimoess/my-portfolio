@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/HeaderBar/Header';
 import projectsList from '../../data/projectsData';
@@ -7,6 +9,7 @@ import './projects.scss';
 import leftArrow from '../../assets/images/left-arrow.png';
 import rightArrow from '../../assets/images/right-arrow.png';
 import Modal from '../../components/Modal/Modal';
+import Progress from '../../components/Modal/Progress';
 
 function ProjectPage() {
   const [num, setNum] = useState({
@@ -75,13 +78,14 @@ function ProjectPage() {
                 }
                 <div className="stacks">
                   {project.stacks.map((stack) => (
-                    <img src={stack} alt="" width="30px" />
+                    <img src={stack} alt="" width="30px" key={uuidv4()} />
                   ))}
                 </div>
               </div>
             ))
           }
         </main>
+        <Progress page={num.to} />
         <div className="buttons-arrow">
           <input
             name="previous"

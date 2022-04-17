@@ -8,27 +8,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .modal-card {
   width: 35rem;
-  height: 35rem;
-  padding: 0 10px 0 10px;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5px;
+  background-color: #242629;
   border-radius: 10px;
   border: 1px solid $link;
-
-    button {
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      z-index: 10;
-      margin-left: 500px;
-    }
 
     p {
       font-size: 1.2rem;
       color: $paragraph;
       text-align: justify;
     }
+}
+
+.modal-title {
+  display: flex;
+  
+  h1 {
+    color: $headline;
+    text-align: center;
+    margin-left: 150px;
+  }
+
+  button {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: auto;
+  }
+}
+
+.modal-progress {
+  display: flex;
+  gap: 0.3rem;
+
+  .ball-light {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 30px;
+    background-color: white;
+  }
+
+  .ball-dark {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 30px;
+    background-color: $link;
+  }
 }
