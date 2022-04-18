@@ -1,1 +1,8 @@
 @import '../../styles/main';
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}

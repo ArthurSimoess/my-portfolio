@@ -28,15 +28,27 @@ function AboutPage() {
         step={step}
       />
       <div className="card-container">
-        <input
-          name="previous"
-          type="image"
-          id="previous"
-          src={leftArrow}
-          disabled={step === 0}
-          alt="left arrow"
-          onClick={stepProgress}
-        />
+        <div>
+          <input
+            name="previous"
+            type="image"
+            id="previous"
+            src={leftArrow}
+            disabled={step === 0}
+            alt="left arrow"
+            onClick={stepProgress}
+          />
+          <input
+            name="next"
+            className="arrow-phone"
+            type="image"
+            id="right"
+            src={rightArrow}
+            disabled={step === 3}
+            alt="right arrow"
+            onClick={stepProgress}
+          />
+        </div>
         <main className="about-card" id="style-7">
           <div className="title">{historyList[step].title}</div>
           <div className="paragraph">{historyList[step].paragraph}</div>
