@@ -3,7 +3,7 @@ const historyList = [
     title: 'Sobre mim',
     paragraph: `Olá, meu nome é Arthur de Andrade Simões. Tenho 25 anos e moro em Belo Horizonte/MG.
     
-    Conheci a programação no início de 2021 por meio de um curso de fundamentos da programação oferecido de forma online pela USP. Terminei este curso apaixonado com as possibilidades que existem no mundo da programação e decidi buscar algo mais aprofundado com o objetivo de tornar essa paixão em uma profissão. Foi assim que conheci a Trybe, uma escola de programação focada em desenvolver o estudante para o mercado de trabalho. O curso tem duração de um ano e oferece uma formação completa em 4 módulos: Fundamentos do desenvolvimento web, Desenvolvimento Front-end/Back-end e ciência da computação. Atualmente estou no final do Módulo de back-end, aprendendo POO, SOLID, Typescript e nodeJs.
+    Conheci a programação no início de 2021 por meio de um curso de Introdução à Ciência da Computação com Python oferecido de forma online pela USP. Terminei este curso apaixonado com as possibilidades que existem no mundo da programação e decidi buscar algo mais aprofundado com o objetivo de tornar essa paixão em uma profissão. Foi assim que conheci a Trybe, uma escola de programação focada em desenvolver o estudante para o mercado de trabalho. O curso tem duração de um ano e oferece uma formação completa em 4 módulos: Fundamentos do desenvolvimento web, Desenvolvimento Front-end/Back-end e ciência da computação. Atualmente estou no final do Módulo de back-end, aprendendo POO, SOLID, Typescript e nodeJs.
     `,
   },
   {

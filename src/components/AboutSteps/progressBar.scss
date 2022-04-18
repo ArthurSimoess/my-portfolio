@@ -20,6 +20,11 @@
     height: 4rem;
     width: 4rem;
   }
+
+  @include respond (phone) {
+    height: 3.8rem;
+    width: 3.8rem;
+  }
 }
 
 
@@ -36,6 +41,11 @@
   @include respond (notebook) {
     height: 4rem;
     width: 4rem;
+  }
+
+  @include respond (phone) {
+    height: 3.8rem;
+    width: 3.8rem;
   }
 }
 

@@ -10,6 +10,7 @@
 
   @include respond (phone) {
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -50,6 +51,21 @@
     }
   
   }
+
+  .arrow-phone {
+    display: none;
+
+    @include respond (phone) {
+      display: inline;
+    }
+
+  }
+
+  input:nth-child(3) {
+    @include respond (phone) {
+      display: none;
+    }
+  }
 }
 
 .about-card {
@@ -74,7 +90,7 @@
 
   @include respond (phone) {
     height: 35rem;
-    width: 23rem;
+    width: 20rem;
     overflow: auto;
   }
 
