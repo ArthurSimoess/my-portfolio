@@ -14,16 +14,22 @@ function HomePage() {
           <h1>Arthur Simões</h1>
           <h2>DESENVOLVEDOR FRONT-END</h2>
           <div>
-            <button
-              type="button"
+            <a
+              href="https://www.linkedin.com/in/arthurrsim%C3%B5es"
+              target="_blank"
+              rel="noreferrer"
+              className="social-btn"
             >
               Linkedin
-            </button>
-            <button
-              type="button"
+            </a>
+            <a
+              href="https://github.com/ArthurSimoess"
+              target="_blank"
+              rel="noreferrer"
+              className="social-btn"
             >
               Github
-            </button>
+            </a>
           </div>
         </section>
         <section className="photo-container">

@@ -1,0 +1,58 @@
+@import '../../styles/main';
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div:nth-child(1) {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    p {
+      color: $paragraph;
+    }
+  }
+
+  input {
+    height: 3rem;
+    width: 19rem;
+    background-color: #242629;
+    color: white;
+
+    &:focus {
+      border: 1px solid $link;
+    }
+  }
+
+  textarea {
+    resize: none;
+    width: 38.6rem;
+    height: 10rem;
+    background-color: #242629;
+    color: white;
+    border: none;
+
+    &:focus {
+      border: 3px solid $link;
+    }
+  }
+
+  button {
+    width: 5rem;
+    height: 3rem;
+    border: 1px solid $link;
+    color: white;
+
+    &:hover {
+      border: 1px solid white;
+      color: $link;
+    }
+  }
+}
