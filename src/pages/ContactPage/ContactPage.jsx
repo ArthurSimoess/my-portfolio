@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable react/jsx-props-no-spreading */
+import React, { useState, useRef } from 'react';
+import { Overlay, Tooltip } from 'react-bootstrap';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/HeaderBar/Header';
 import './contact.scss';
@@ -7,17 +9,25 @@ import wpp from '../../assets/images/whatsapp.svg';
 import github from '../../assets/images/gitlight.png';
 import linkedin from '../../assets/images/linkedin.svg';
 import gmail from '../../assets/images/gmail.svg';
+import FloatBtn from '../../components/FloatBtn/FloatBtn';
 
 // https://www.emailjs.com/
 // https://www.youtube.com/watch?v=NgWGllOjkbs
 // Maps google -> https://www.youtube.com/watch?v=yc8L7llaYKo
 
 function ContactPage() {
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+
+  function handleClick() {
+    navigator.clipboard.writeText('arthursimoes155@gmail.com');
+    setShow(!show);
+  }
+
   return (
     <div className="contact-page">
       <Header />
       <main className="contact-container">
-        <Form />
         <div className="social-media">
           <a href="https://github.com/ArthurSimoess" target="_blank" rel="noreferrer">
             <img src={github} alt="Github logo" />
@@ -28,14 +38,24 @@ function ContactPage() {
           <a href="https://api.whatsapp.com/send?phone=5531985756888&text=Ol%C3%A1%2C%20sou%20Arthur%20Sim%C3%B5es" target="_blank" rel="noreferrer">
             <img src={wpp} alt="Github logo" />
           </a>
-          <buttom
+          <button
             type="button"
-            onClick={() => { navigator.clipboard.writeText('arthursimoes155@gmail.com'); }}
+            ref={target}
+            onClick={handleClick}
           >
             <img src={gmail} alt="Gmail logo" />
-          </buttom>
+          </button>
+          <Overlay target={target.current} show={show} placement="right">
+            {(props) => (
+              <Tooltip id="overlay-example" {...props}>
+                Email copiado
+              </Tooltip>
+            )}
+          </Overlay>
         </div>
+        <Form />
       </main>
+      <FloatBtn />
       <Footer />
     </div>
   );
