@@ -8,6 +8,10 @@ form {
   div:nth-child(1) {
     display: flex;
     gap: 0.3rem;
+
+    @include respond (phone) {
+      flex-direction: column;
+    }
   }
 
   .label {
@@ -41,6 +45,10 @@ form {
 
     &:focus {
       border: 3px solid $link;
+    }
+
+    @include respond (phone) {
+      width: 19rem;
     }
   }
 

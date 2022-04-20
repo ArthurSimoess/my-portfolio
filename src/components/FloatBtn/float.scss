@@ -1,0 +1,48 @@
+@import '../../styles/main';
+
+.float-social-btns {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10px;
+  gap: 0.5rem;
+  bottom: 50px;
+  align-items: center;
+}
+
+.medias-btn {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  background-color: #242629;
+  border: 1px solid $link;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  @include respond (phone) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.float-btn {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  background-color: $link;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 100px;
+  opacity: 0.8;
+
+  @include respond (phone) {
+    display: block;
+  }
+}

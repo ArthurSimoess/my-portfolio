@@ -35,6 +35,10 @@
     color: $headline;
     text-align: center;
     margin-left: 150px;
+
+    @include respond (phone) {
+      margin-left: 100px;
+    }
   }
 
   button {

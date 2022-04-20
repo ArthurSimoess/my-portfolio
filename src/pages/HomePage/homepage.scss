@@ -141,6 +141,10 @@
     .logo-react {
       width: 7rem;
       margin-top: 8rem;
+
+      @include respond (phone) {
+        margin-left: 25px;
+      }
     }
     .logo-node {
       width: 4rem;
