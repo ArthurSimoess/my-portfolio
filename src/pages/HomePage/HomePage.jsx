@@ -29,7 +29,7 @@ function HomePage() {
               Linkedin
             </a>
             <a
-              href="https://github.com/ArthurSimoess"
+              href="https://github.com/ArthurSimoess/my-portfolio"
               target="_blank"
               rel="noreferrer"
               className="social-btn"
