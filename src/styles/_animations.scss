@@ -37,30 +37,6 @@
   }
 }
 
-.photo-container {
-  animation: Slide_up 1.5s ease;
-}
-
-.card-container {
-  animation: Slide_up 1.5s ease;
-}
-
-.progress-container {
-  animation: Slide_up 1.5s ease;
-}
-
-.button-card {
-  animation: Slide_up 1.5s ease;
-}
-
-.skills-container {
-  animation: Slide_up 1.5s ease;
-}
-
-.contact-container {
-  animation: Slide_up 1.5s ease;
-}
-
 @keyframes Slide_up {
   0% {
       transform: translateY(500px);
