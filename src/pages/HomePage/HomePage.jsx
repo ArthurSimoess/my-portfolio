@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Header from '../../components/HeaderBar/Header';
 import './homepage.scss';
 import logo from '../../assets/images/logo.svg';
@@ -7,7 +8,12 @@ import Footer from '../../components/Footer/Footer';
 
 function HomePage() {
   return (
-    <div className="home-container">
+    <motion.div
+      className="home-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Header />
       <main className="main-container">
         <section className="home-title">
@@ -45,7 +51,7 @@ function HomePage() {
         </section>
       </main>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

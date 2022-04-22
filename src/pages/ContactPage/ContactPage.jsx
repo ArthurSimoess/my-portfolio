@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useState, useRef } from 'react';
 import { Overlay, Tooltip } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/HeaderBar/Header';
 import './contact.scss';
@@ -25,7 +26,12 @@ function ContactPage() {
   }
 
   return (
-    <div className="contact-page">
+    <motion.div
+      className="contact-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Header />
       <main className="contact-container">
         <div className="social-media">
@@ -57,7 +63,7 @@ function ContactPage() {
       </main>
       <FloatBtn />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { motion } from 'framer-motion';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/HeaderBar/Header';
 import projectsList from '../../data/projectsData';
@@ -40,7 +41,12 @@ function ProjectPage() {
   }
 
   return (
-    <div className="project-page">
+    <motion.div
+      className="project-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       {
         open && <Modal showModal={showModal} />
       }
@@ -108,7 +114,7 @@ function ProjectPage() {
         </div>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

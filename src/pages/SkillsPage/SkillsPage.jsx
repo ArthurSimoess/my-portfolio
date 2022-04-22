@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/HeaderBar/Header';
 import skillsList from '../../data/skillsData';
@@ -6,7 +7,12 @@ import './skill.scss';
 
 function SkillsPage() {
   return (
-    <div className="skills-page">
+    <motion.div
+      className="skills-page"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Header />
       <main className="skills-container">
         {
@@ -16,7 +22,7 @@ function SkillsPage() {
         }
       </main>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
