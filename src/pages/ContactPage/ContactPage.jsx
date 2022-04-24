@@ -12,10 +12,6 @@ import linkedin from '../../assets/images/linkedin.svg';
 import gmail from '../../assets/images/gmail.svg';
 import FloatBtn from '../../components/FloatBtn/FloatBtn';
 
-// https://www.emailjs.com/
-// https://www.youtube.com/watch?v=NgWGllOjkbs
-// Maps google -> https://www.youtube.com/watch?v=yc8L7llaYKo
-
 function ContactPage() {
   const [show, setShow] = useState(false);
   const target = useRef(null);

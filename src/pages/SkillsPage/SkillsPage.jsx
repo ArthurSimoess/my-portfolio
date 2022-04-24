@@ -17,7 +17,7 @@ function SkillsPage() {
       <main className="skills-container">
         {
           skillsList.map((skill) => (
-            <img src={skill.image} alt={skill.text} className="skills-img" />
+            <img src={skill.image} alt={skill.text} className="skills-img" key={skill.id} />
           ))
         }
       </main>
