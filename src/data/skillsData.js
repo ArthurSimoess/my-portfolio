@@ -9,15 +9,15 @@ import typescript from '../assets/images/typescript.svg';
 import sass from '../assets/images/sass.svg';
 
 const skillsList = [
-  { image: js, text: 'JavaScript logo' },
-  { image: typescript, text: 'Typescript logo' },
-  { image: react, text: 'React Js logo' },
-  { image: rtl, text: 'React Testing Library logo' },
-  { image: tailwind, text: 'TailwindCss logo' },
-  { image: sass, text: 'sass logo' },
-  { image: redux, text: 'Redux logo' },
-  { image: mySql, text: 'MySql logo' },
-  { image: node, text: 'Nodejs logo' },
+  { image: js, text: 'JavaScript logo', id: 1123 },
+  { image: typescript, text: 'Typescript logo', id: 2233 },
+  { image: react, text: 'React Js logo', id: 3344 },
+  { image: rtl, text: 'React Testing Library logo', id: 4433 },
+  { image: tailwind, text: 'TailwindCss logo', id: 5533 },
+  { image: sass, text: 'sass logo', id: 6644 },
+  { image: redux, text: 'Redux logo', id: 7766 },
+  { image: mySql, text: 'MySql logo', id: 8866 },
+  { image: node, text: 'Nodejs logo', id: 9663 },
 ];
 
 export default skillsList;
