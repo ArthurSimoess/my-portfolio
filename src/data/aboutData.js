@@ -12,11 +12,11 @@ const historyList = [
   },
   {
     title: 'Futuro',
-    paragraph: 'Estou trabalhando atualmente como programador freelancer, porém estou focado em conseguir um emprego estável em uma empresa. Para este ano de 2022 pretendo terminar o meu curso na Trybe, inicializar a faculdade de Sistemas de Informação no segundo semestre e conseguir uma oportunidade de emprego em uma empresa.',
+    paragraph: 'Estou trabalhando atualmente como programador freelancer, porém estou focado em conseguir um emprego estável em uma empresa. Para este ano de 2022 pretendo terminar o meu curso na Trybe, inicializar a faculdade de Sistemas de Informação no segundo semestre e conseguir uma oportunidade de emprego em tempo integral',
   },
   {
     title: 'Obrigado!',
-    paragraph: 'Muito obrigado por ler um pouco sobre mim. Estou totalmente disponível para novas oportunidade e desafios 🧑🏾‍💻',
+    paragraph: 'Muito obrigado por ler um pouco sobre mim. Ainda estou escrevendo a minha história no mundo da tecnologia, mas já me sinto muito grato por toda a caminhada até aqui. Estou totalmente disponível para novas oportunidade e desafios 🧑🏾‍💻',
   },
 ];
 
