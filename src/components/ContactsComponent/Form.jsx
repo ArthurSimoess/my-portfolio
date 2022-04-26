@@ -32,6 +32,7 @@ function Form() {
           console.log(error.text);
         },
       );
+    global.alert('Mensagem enviada com sucesso');
     reset();
   };
 
