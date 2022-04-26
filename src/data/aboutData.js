@@ -16,7 +16,7 @@ const historyList = [
   },
   {
     title: 'Obrigado!',
-    paragraph: 'Muito obrigado por ler um pouco sobre mim. Ainda estou escrevendo a minha história no mundo da tecnologia, mas já me sinto muito grato por toda a caminhada até aqui. Estou totalmente disponível para novas oportunidade e desafios 🧑🏾‍💻',
+    paragraph: 'Muito obrigado por ler um pouco sobre mim. Ainda estou escrevendo a minha história no mundo da tecnologia, mas já me sinto muito grato por toda a caminhada até aqui. Estou totalmente disponível para novas oportunidades e desafios 🧑🏾‍💻',
   },
 ];
 
