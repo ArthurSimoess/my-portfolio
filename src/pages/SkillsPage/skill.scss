@@ -8,6 +8,23 @@
   overflow: auto;
 }
 
+.skill-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+
+  p {
+    font-size: 5rem;
+    color: gray
+  }
+
+  .transparent {
+    color: transparent;
+  }
+}
+
 .skills-container {
   color: white;
   text-align: center;
