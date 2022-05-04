@@ -41,10 +41,10 @@ const projectsList = [
   {
     id: 4,
     tipo: 'Pessoal',
-    linkSite: 'https://arthursimoess.github.io/super-trunfo-project/#/',
+    linkSite: 'https://super-auau-trunfo-app.vercel.app',
     linkCode: 'https://github.com/ArthurSimoess/super-trunfo-project',
     image: trunfoImg,
-    title: 'Super Tryunfo',
+    title: 'Super Auau Trunfo',
     stacks: [react, tailwind, javascript],
   },
   {
