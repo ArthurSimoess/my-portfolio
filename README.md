@@ -1,7 +1,9 @@
 
-# Meu portfólio
+# (Desatualizado) Meu portfólio
 
-Projeto feito com ReactJs, SASS e bootstrap com o intuito de contar um pouco sobre mim e mostrar alguns dos projetos que eu já fiz.
+Portfólio feito no início de 2022. As informações estão desatualizadas, porém ele serve como um lembrete do quanto progredi na área da programação em um curto período de tempo.
+
+Projeto feito com ReactJs, SASS e bootstrap com o objetivo de mostra um pouco dos meus projetos e minhas habilidades.
 
 ## Deploy
 
